@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def basket(request):
+    return HttpResponse('Корзина')
+
+def personal_account(request):
+    return HttpResponse('Личный кабинет')
+
+def payment(request):
+    return HttpResponse(f'Страница оплаты')
