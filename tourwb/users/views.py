@@ -1,10 +1,14 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def basket(request):
-    return HttpResponse('Корзина')
+    template = 'users/basket.html'
+    return render(request, template)
 
 def personal_account(request):
-    return HttpResponse('Личный кабинет')
+    template = 'users/personal_account.html'
+    return render(request, template)
 
 def payment(request):
-    return HttpResponse(f'Страница оплаты')
+    template = 'users/payment.html'
+    return render(request, template)

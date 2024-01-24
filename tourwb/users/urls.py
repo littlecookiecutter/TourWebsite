@@ -6,7 +6,7 @@ urlpatterns = [
     # Страница с корзиной
     path('basket/', views.basket),
     # Страница с личным кабинетом
-    path('lk/', views.personal_account),
+    path('', views.personal_account),
     # Страница с оплатой
     path('payment/', views.payment),
 ]
